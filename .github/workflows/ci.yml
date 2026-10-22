@@ -31,7 +31,7 @@ jobs:
       # The tests use Testcontainers (Docker is on the runner). Fetches the libraries from GitHub Packages, which must let this
       # repository read them (Package settings > Manage Actions access).
       - name: Test
-        run: ./mvnw -B -s .mvn/github-settings.xml verify
+        run: ./mvnw -B verify
 
       - uses: docker/setup-buildx-action@v3
 
